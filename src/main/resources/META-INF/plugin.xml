@@ -1,0 +1,68 @@
+<idea-plugin>
+    <id>me.xdrop.night-owl</id>
+    <name>Night Owl Theme</name>
+    <vendor email="xdrop.me@gmail.com" url="https://xdrop.me">xdrop</vendor>
+
+    <description><![CDATA[
+    <p>Night owl <i>theme</i> and <i>color scheme</i> for IntelliJ®, Webstorm® and other Jetbrains® IDEs</p>
+    <br/>
+    <p align="center">
+        <img height="64" width="64" alt="owl" src="https://i.imgur.com/iL6cZ25.png" />
+    </p>
+    <br/>
+    Night Owl theme and color scheme based on Sarah Drasner's VSCode one.
+
+    A theme for the night owls out there. Works well in the daytime, too,
+    but this theme is fine-tuned for those of us who like to code late into the night.
+    Color choices have taken into consideration what is accessible to people with colorblindness
+    and in low-light circumstances. Decisions were also based on meaningful contrast for reading
+    comprehension and for optimal razzle dazzle.
+
+    This plugin depends on Material Theme UI and Rainbow Brackets so make sure you install those before hand.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.chrisrm.idea.MaterialThemeUI">
+        <bundledTheme name="Night Owl" path="/themes/nightowl"/>
+        <bundledTheme name="Night Owl Carbon" path="/themes/nightowl-carbon"/>
+        <bundledTheme name="Night Owl Palenight" path="/themes/nightowl-palenight"/>
+        <bundledTheme name="Light Owl" path="/themes/nightowl-light"/>
+    </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <bundledColorScheme path="colors/NightOwl" id="Night Owl"/>
+        <bundledColorScheme path="colors/NightOwlCarbon" id="Night Owl Carbon"/>
+        <bundledColorScheme path="colors/NightOwlNoItalic" id="Night Owl (No Italic)"/>
+        <bundledColorScheme path="colors/NightOwlCarbonNoItalic" id="Night Owl Carbon (No Italic)"/>
+        <bundledColorScheme path="colors/NightOwlPalenight" id="Night Owl Palenight"/>
+        <bundledColorScheme path="colors/NightOwlPalenightNoItalic" id="Night Owl Palenight (No Italic)"/>
+        <bundledColorScheme path="colors/NightOwlLight" id="Night Owl Light"/>
+        <bundledColorScheme path="colors/NightOwlLightNoItalic" id="Night Owl Light (No Italic)"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="me.xdrop.nightowl.settings.NightOwlConfigurable"/>
+        <applicationService serviceImplementation="me.xdrop.nightowl.settings.NightOwlSettings"/>
+        <annotator language="JavaScript" implementationClass="me.xdrop.nightowl.highlight.NightOwlJSAnnotator"/>
+        <annotator language="TypeScript" implementationClass="me.xdrop.nightowl.highlight.NightOwlJSAnnotator"/>
+        <annotator language="JAVA" implementationClass="me.xdrop.nightowl.highlight.NightOwlJavaAndKotlinAnnotator"/>
+        <annotator language="kotlin" implementationClass="me.xdrop.nightowl.highlight.NightOwlJavaAndKotlinAnnotator"/>
+        <colorSettingsPage implementation="me.xdrop.nightowl.settings.colors.NightOwlJavascriptColorSettings"/>
+        <colorSettingsPage implementation="me.xdrop.nightowl.settings.colors.NightOwlJavaColorSettings"/>
+    </extensions>
+
+    <application-components>
+        <component>
+            <implementation-class>me.xdrop.nightowl.NightOwlComponent</implementation-class>
+        </component>
+    </application-components>
+
+    <project-components>
+        <component>
+            <implementation-class>me.xdrop.nightowl.NightOwlProjectComponent</implementation-class>
+        </component>
+    </project-components>
+    <depends>com.chrisrm.idea.MaterialThemeUI</depends>
+    <depends>izhangzhihao.rainbow.brackets</depends>
+</idea-plugin>

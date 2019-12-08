@@ -1,0 +1,26 @@
+<mtTheme>
+    <name>Light Owl</name>
+    <themeId>nightowl-light</themeId>
+    <dark>false</dark>
+    <editorColorsScheme>Night Owl Light</editorColorsScheme>
+    <accentColor>403f53</accentColor>
+    <excludedColor>eae8e8</excludedColor>
+    <colors>
+        <color id="treeSelection" value="E0E7EA"/>
+        <color id="highlight" value="E0E7EA"/>
+        <color id="secondBorder" value="efefef"/>
+        <color id="contrast" value="FAFAFA"/>
+        <color id="button" value="FAFAFA"/>
+        <color id="selectionForeground" value="403f53"/>
+        <color id="selectionBackground" value="999e9e"/>
+        <color id="secondaryBackground" value="f2f5f7"/>
+        <color id="disabled" value="dddddd"/>
+        <color id="tableSelected" value="FAFAFA"/>
+        <color id="text" value="403F53"/>
+        <color id="notifications" value="F0F0F0"/>
+        <color id="foreground" value="546e7a"/>
+        <color id="background" value="FAFAFA"/>
+        <color id="excluded" value="82AAFF"/>
+        <color id="accent" value="eae8e8"/>
+    </colors>
+</mtTheme>

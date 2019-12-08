@@ -1,0 +1,27 @@
+<mtTheme>
+    <name>Night Owl</name>
+    <themeId>nightowl</themeId>
+    <dark>true</dark>
+    <editorColorsScheme>Night Owl</editorColorsScheme>
+    <accentColor>FF1675</accentColor>
+    <excludedColor>0B253A</excludedColor>
+    <colors>
+        <color id="treeSelection" value="152C3B"/>
+        <color id="highlight" value="152C3B"/>
+        <color id="secondBorder" value="2a373e"/>
+        <color id="contrast" value="001424"/>
+        <color id="button" value="2e3c43"/>
+        <color id="selectionForeground" value="ffffff"/>
+        <color id="selectionBackground" value="152C3B"/>
+        <color id="secondaryBackground" value="011627"/>
+        <color id="disabled" value="2e3c42"/>
+        <color id="tableSelected" value="152C3B"/>
+        <color id="secondBorder" value="21222C"/>
+        <color id="text" value="607d8b"/>
+        <color id="notifications" value="152C3B"/>
+        <color id="foreground" value="b0bec5"/>
+        <color id="background" value="011627"/>
+        <color id="excluded" value="0B253A"/>
+        <color id="accent" value="FF1675"/>
+    </colors>
+</mtTheme>

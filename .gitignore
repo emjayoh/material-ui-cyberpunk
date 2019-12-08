@@ -1,0 +1,11 @@
+.old
+build/**
+.idea/
+.gradle/
+meta/
+*.swp
+*.iml
+*.ipr
+*.rej
+*.iws
+*.orig
